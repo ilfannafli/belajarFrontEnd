@@ -9,57 +9,12 @@
 </head>
 
 <body>
-    <h1>HTML<sup>&copy;</sup></h1>
-    <!-- membuat garis pembatas -->
-    <hr>
 
-    <p>
-        <b>Hypertext Markup Language (HTML)</b> adalah <a href="#">bahasa markah</a> standar untuk dokumen yang
-        dirancang untuk ditampilkan di peramban <span>internet</span>. <br>
-        <!-- membuat break (enter) -->
-        Ini dapat dibantu oleh teknologi seperti
-        Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.
-    </p>
-    <p>
-        Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen menjadi
-        halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang disertakan
-        untuk penampilan dokumen.
-    </p>
-
-    <h2>Sejarah</h2>
-    <p>
-        Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee<sup><a href="#">[1]</a></sup>, dan juga seorang kontraktor
-        di CERN (Organisasi Eropa
-        untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi dokumen.
-        Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet.[2] Berners-Lee
-        menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang sama,
-        Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk
-        pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya[3] sejak 1990 dia mendaftar[4]
-        "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah ensiklopedia.
-    </p>
-
-    <h3>Sejarah Versi HTML</h3>
-    <h4>24 November 1995</h4>
-    <p>
-        HTML 2.0 dipublikasikan sebagai IETF RFC 1866. Penambahan RFC memperbanyak kemampuan untuk:
-    <ul>
-        <li>November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </li>
-        <li>Mei 1996: RFC 1942 (tabel)</li>
-        <li>Agustus 1996: RFC 1980 (peta gambar berbasis klien)</li>
-        <li>Januari 1997: RFC 2070 (internasionalisasi)</li>
-    </ul>
-    </p>
-
-    <!-- komentar menggunakan ctrl + / -->
-    <!-- menampilkan gambar / -->
-    <a href="#">test link</a>
-    <img class="fit-picture" src="media/posko_naru.jpg" width="200" alt="gambar posko naru">
+    <!-- semantic -> navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
 
     <!-- div = pembungkus beberapa element dalam bentuk blok -->
     <div>
@@ -68,17 +23,93 @@
         <p>logo HTML</p>
     </div>
 
-    <!-- span = pembungkus beberapa element dalam bentuk inline -->
-    <p>ini adalah elemen <span>span</span></p>
+    <main>
+        <section>
+            <h1>HTML<sup>&copy;</sup></h1>
+            <!-- membuat garis pembatas -->
+            <hr>
 
-    <!-- contoh superscript -->
-    <p>ini adalah contoh superscript : a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
 
-    <!-- contoh subscript -->
-    <p>ini adalah contoh subscript : C<sub>2</sub>H<sub>5</sub>OH</p>
+            <p>
+                <b>Hypertext Markup Language (HTML)</b> adalah <a href="#">bahasa markah</a> standar untuk dokumen yang
+                dirancang untuk ditampilkan di peramban <span>internet</span>. <br>
+                <!-- membuat break (enter) -->
+                Ini dapat dibantu oleh teknologi seperti
+                Cascading Style Sheets (CSS) dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.
+            </p>
+            <p>
+                Peramban internet menerima dokumen HTML dari server web atau dari penyimpanan lokal dan membuat dokumen
+                menjadi
+                halaman web multimedia. HTML menggambarkan struktur halaman web secara semantik dan isyarat awal yang
+                disertakan
+                untuk penampilan dokumen.
+            </p>
+        </section>
 
-    <!-- entity code : teks yang dimulai dengan ampersand (&) dan diakhiri dengan titik koma (;) googling aja wkwkwk-->
+        <article>
+            <h2>Sejarah</h2>
+            <p>
+                Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee<sup><a href="#">[1]</a></sup>, dan juga seorang
+                kontraktor
+                di CERN (Organisasi Eropa
+                untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi
+                dokumen.
+                Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet.[2] Berners-Lee
+                menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang
+                sama,
+                Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk
+                pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya[3] sejak 1990 dia
+                mendaftar[4]
+                "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah
+                ensiklopedia.
+            </p>
+        </article>
+        <article>
+            <h3>Sejarah Versi HTML</h3>
+            <h4>24 November 1995</h4>
+            <p>
+                HTML 2.0 dipublikasikan sebagai IETF RFC 1866. Penambahan RFC memperbanyak kemampuan untuk:
+            <ul>
+                <li>November 25, 1995: RFC 1867 (mengunggah file berdasarkan bentuk)
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </li>
+                <li>Mei 1996: RFC 1942 (tabel)</li>
+                <li>Agustus 1996: RFC 1980 (peta gambar berbasis klien)</li>
+                <li>Januari 1997: RFC 2070 (internasionalisasi)</li>
+            </ul>
+            </p>
+        </article>
 
+
+
+        <!-- komentar menggunakan ctrl + / -->
+        <!-- menampilkan gambar / -->
+        <a href="#">test link</a>
+        <img class="fit-picture" src="media/posko_naru.jpg" width="200" alt="gambar posko naru">
+
+        <!-- span = pembungkus beberapa element dalam bentuk inline -->
+        <p>ini adalah elemen <span>span</span></p>
+
+        <!-- contoh superscript -->
+        <p>ini adalah contoh superscript : a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+
+        <!-- contoh subscript -->
+        <p>ini adalah contoh subscript : C<sub>2</sub>H<sub>5</sub>OH</p>
+
+        <!-- entity code : teks yang dimulai dengan ampersand (&) dan diakhiri dengan titik koma (;) googling aja wkwkwk-->
+
+        <!-- semantic element: main, nav,section,article,aside,footer dll-->
+        <p>semantic element</p>
+        <img src="media/semantic_elements.gif" alt="gambar semantic elements">
+    </main>
+
+    <footer>
+        Copyright &copy; 2021
+    </footer>
 </body>
 
 </html>
