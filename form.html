@@ -64,11 +64,27 @@
         </div>
         <div>
             <label for="term">Sesuai pesanan</label>
-            <input type="checkbox" name="term" id="term">
+            <input type="checkbox" name="term" id="term" value="benar">
+        </div>
+        <!-- input textarea -->
+        <div>
+            <p>
+                <label for="notes">Catatan</label>
+            </p>
+            <textarea name="notes" id="notes" cols="50" rows="5"></textarea>
         </div>
         <button type="submit">Order</button>
     </form>
+    
+    <hr>
 
+    <!-- validasi -->
+    <h1>Validasi</h1>
+    <form action="valid">
+        <input type="text" required name="input" minlength="3" maxlength="10">
+        <input type="number" name="number" id="number" min="2" max="5">
+        <button type="submit">Kirim</button>
+    </form>
 </body>
 
 </html>
