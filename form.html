@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
     <nav>
         <a href="index.html">Home</a>
@@ -15,37 +17,58 @@
     </nav>
 
     <h1>Formulir isian</h1>
-    <form action="#" method="post">
+    <form action="/daftar" method="get">
         <table>
             <tbody>
                 <tr>
                     <td><label for="name">Nama</label></td>
                     <td>:</td>
-                    <td><input type="text" id="name" required placeholder="Nama"></td>
+                    <td><input type="text" id="name" name="name" placeholder="Nama"></td>
                 </tr>
                 <tr>
                     <td><label for="email">Email</label></td>
                     <td>:</td>
-                    <td><input type="email" id="email" required placeholder="Email"></td>
+                    <td><input type="email" id="email" name="email" placeholder="Email"></td>
                 </tr>
                 <tr>
                     <td><label for="password">Password</label></td>
                     <td>:</td>
-                    <td><input type="password" id="password" required placeholder="Password"></td>
+                    <td><input type="password" id="password" name="password" placeholder="Password"></td>
                 </tr>
                 <tr>
-                    <td><label for="number">Phone Number</label></td>
+                    <td><label for="phone">Phone Number</label></td>
                     <td>:</td>
-                    <td><input type="number" id="number" required placeholder="Phone Number"></td>
-                </tr>
-                <tr>
-                    <td><label for="color">Choose Color</label></td>
-                    <td>:</td>
-                    <td><input type="color" id="color" required placeholder="Color"></td>
+                    <td><input type="number" id="phone" name="phone" placeholder="Phone Number"></td>
                 </tr>
             </tbody>
         </table>
+        <button type="submit">Daftar</button>
     </form>
-    
+    <hr>
+
+    <!-- belajar radio button, select-option, dan checkbox -->
+    <h1>Pesanan</h1>
+    <form action="/order" method="get">
+        <label for="">Baju</label>
+        <div>
+            <input type="radio" name="baju" id="" value="kemeja" checked><label for="">Kemeja</label>
+            <input type="radio" name="baju" id="" value="kaos"><label for="">Kaos</label>
+        </div>
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran">
+                <option value="s" selected>Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+        </div>
+        <div>
+            <label for="term">Sesuai pesanan</label>
+            <input type="checkbox" name="term" id="term">
+        </div>
+        <button type="submit">Order</button>
+    </form>
+
 </body>
+
 </html>
