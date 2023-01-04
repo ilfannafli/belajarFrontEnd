@@ -1,0 +1,22 @@
+h2 {
+    color: red;
+}
+button {
+    color: yellow;
+    background-color: blue;
+}
+p {
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+}
+h1 {
+    text-align: center;
+    font-weight: 900;
+    text-decoration: underline overline #363f4f;
+    letter-spacing: 10px;
+    font-size: 200%;
+}
+a {
+    text-decoration: none;
+}
